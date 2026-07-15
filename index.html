@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>人·AI·秩序</title>
+    <meta name="description" content="如何用历史的眼光，在绚烂的人类文明的长流中，找到属于AI的位置？">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1020px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 6px;
+            font-size: 28px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 18px;
+            margin-bottom: 24px;
+        }
+
+        /* 标签导航 */
+        .tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 30px;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 12px 0;
+            background: transparent;
+            border: none;
+            font-size: 17px;
+            font-family: inherit;
+            color: #888;
+            cursor: pointer;
+            transition: 0.25s ease;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+        }
+        .tab-btn:hover {
+            color: #333;
+        }
+        .tab-btn.active {
+            color: #1a1a1a;
+            border-bottom-color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        /* 内容面板 */
+        .tab-content {
+            display: none;
+            min-height: 300px;
+            line-height: 1.9;
+            font-size: 16px;
+            white-space: pre-line;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+        /* 简介区 */
+        .bio-text {
+            font-size: 17px;
+            line-height: 2;
+            color: #000000;
+        }
+        .bio-text p {
+            margin-bottom: 16px;
+        }
+        .bio-text .label {
+            font-weight: 500;
+            color: #555;
+        }
+
+        /* 内容区 */
+        .poem-content {
+            text-align: left;
+            font-size: 17px;
+            line-height: 2.0;
+            white-space: pre-wrap;
+            padding-left: 2em;
+        }
+
+        /* 页脚 */
+        .footer {
+            margin-top: 50px;
+            padding-top: 18px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+        .footer a {
+            color: #555;
+            text-decoration: none;
+            border-bottom: 1px dotted #ccc;
+        }
+        .footer a:hover {
+            border-bottom: 1px solid #555;
+        }
+   	 #popup:target {
+     	   display: flex !important;
+   	 }
+	blockquote {
+   	 margin: 16px 0;
+   	 padding: 8px 20px;
+   	 border-left: 4px solid #FAF6DA;
+   	 background-color: #FBFBF3;
+   	 color: #555;
+   	 font-style: normal;
+}
+</style>
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1><b>人·AI·秩序</b></h1>
+
+    <!-- 标签导航 -->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="tab-bio">关于</button>
+        <button class="tab-btn" data-tab="tab-poem">构建</button>
+    </div>
+
+    <!-- 关于面板（默认显示） -->
+    <div id="tab-bio" class="tab-content active">
+        <div class="bio-text">
+<h2>关于</h2>
+<h3>欢迎</h3>
+欢迎一起构建和谐有序的人机关系。
+<a href="#popup" style="color:#555; text-decoration:underline; cursor:pointer;">关于我</a>
+<div id="popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); z-index:9999; align-items:center; justify-content:center;">
+    <div style="background:#FFFFFB; max-width:660px; width:90%; padding:30px 35px; border-radius:12px; box-shadow:0 20px 60px rgba(0,0,0,0.3); position:relative; max-height:80vh; overflow-y:auto; line-height:1.8; color:#1e1e1e;"><a href="#" style="position:absolute; top:12px; right:18px; font-size:24px; color:#999; text-decoration:none; line-height:1;">&times;</a><h3 style="margin-top:0; font-weight:400; letter-spacing:2px; border-bottom:1px solid #eee; padding-bottom:12px;">关于我</h3>
+<div style="white-space: normal;">
+你好，我是祝青。<br>
+许久之前，我在笔记上写下：<br>
+<blockquote>“我不知道我在想什么，我不知道我在做什么，我不知道我现在什么心情…”</blockquote>
+后来，我在心里问自己：
+<blockquote>“我的毕生事业应该是什么？”</blockquote>
+最近，我问自己：<br>
+<blockquote>“人与机器的关系应该是怎样的？”</blockquote>
+这些笔记和问题像是一些信件，发件人是我，收件人是我，我也因我的这些信件而改变。<br><br>
+
+我的信件还在邮递中，一部分，转化成了文字写了出来，你也许已经看到了。另一部分还在心里酝酿，也许我们未来会看到。<br><br>
+
+现在，你可以发这样的信件，发件人是你，收件人是我。你看得到，我也看得到。如同前面所说，这些信件会在未来再次查收，也许会改变你，也许也会改变我。<br><br>
+
+如果你有这样的信件，可以发送到我的邮箱withzin@163.com。<br><br>
+
+我会看到，但请不必期待我的回复，因为收件人既是我，也是未来的你。<br><br>
+
+天高地迥，宇宙辽阔，且听我娓娓道来，且听你娓娓道来。<br><br>
+
+<p style="text-align: right;">
+2026.7.15<br>
+祝青<br>
+</p>
+        </div>
+    </div>
+</div><a href="https://github.com/gitzhupro/human-machine-relationship" target="_blank" style="color:#555; text-decoration:underline; cursor:pointer;">关于项目</a>
+
+<h3>按语</h3>
+围绕AI相关的问题，是目前发展相当重要的问题。
+很多问题，人类社会已经探讨、发展了上千年，积累了相当的经验和方法。
+但AI似乎不同：
+
+它太新，新到几十年的AI发展与千万年的人类文明积累不对等。
+它太快，快到几年间其发展就已不可同日而语。
+它太有影响，极具潜力地影响到可见与不可见的未来，且无法预见任何休止之处。
+它不可回撤，它具备影响现实世界的巨大潜力，这种发展动能固然可以调整，但AI这个议题一旦登录历史舞台，似乎就已不可撤销。
+
+<h3>议题</h3>
+在这个项目中，核心议题只有一个：如何用历史的眼光，在绚烂的人类文明的长流中，找到属于AI的位置？
+诚然核心议题如此，但这不避免的会挑战到过去的许多未曾言明的问题，如今也许已不可回避。
+
+<h3>内容</h3>
+构建部分，是目前的内容输出，它只保证一件事：尝试对上述议题进行回答。 它的修正、它的补充，也许需要更多人的参与。
+
+<h3>标签</h3>
+AI、AI幻觉、人与AI关系、人机关系、AI立法、AI权责、人与AI秩序、人机秩序。
+
+<hr>
+此刻，我预感到，这会是一趟奇特旅程，未必大有裨益，但必不虚此行。
+
+</div>
+    </div>
+
+    <!-- 内容面板 -->
+    <div id="tab-poem" class="tab-content">
+        <div class="poem-content">
+<h2>人机关系基础构建</h2>
+宗旨：将AI这个悬浮的问题，插在文明、思考与实践的底座上，直指人类存在的本质。  
+主动，有意，有立场的围绕控制，主权，权责，来展开。  <br> 
+<h3>目的</h3>
+认识人机关系并为和谐有序的人机关系进行基础构建。  
+人机关系是人类全体与机器全体的关系，这由单独的人类个体与机器个体关系构成。  <br> 
+<h3>人机关系缘由</h3>
+人类是人机关系的根本推动者。人机关系持续发展，会反过来塑造人机关系的发展基础。  
+人机关系的构建在于人，影响于人。  
+人类有义务认识与构建和谐有序的人机关系，以更好地服务于人的发展。  <br> 
+<h3>人机关系本质</h3>
+机器是人类思考与实践的产物，能在人的作用下承担人的部分实践，以延展和增强人的实践能力。  
+人机关系本质是人的思考与实践的关系。认识人机关系，在于认识人的思考与实践。  
+人的思考作用于实践，人的实践过程与结果反过来会成为人思考的基础。  
+有机器参与后，人的思考作用于人的控制性实践，人的控制性实践作用于机器代实践，后两者实践过程与结果成为思考的基础。  
+人的思考与实践的关系，本质上是人认识外部世界与改造外部世界的关系。  <br> 
+<h3>人机关系作用</h3>
+人机关系的作用，本质上是人的思考、人的控制性实践、机器代实践之间的作用。人的思考是三者作用的起始点和回归点。  
+控制关系是人机关系作用的核心。人的思考是人的控制性实践、机器代实践的根本控制来源。  
+人的思考所产生的控制受到人的实践能力、机器的代实践能力的限制。人的实践能力、机器的代实践能力受到客观世界规律和客观现实的限制。  
+人的思考不能直接作用于机器代实践，因为人的控制性实践是连接两者的唯一桥梁。  
+人机关系的实质，就是人的思考产生控制性实践，作用于机器，产生机器代实践，以产生实践影响的关系。  
+因此，人的控制性实践承托人的思考，机器代实践承托人的控制性实践。  
+控制关系的实现，需要控制载体。  
+控制的载体根据控制和被控制双方而有所不同。  <br> 
+<h3>人机关系的保障</h3> 
+人机关系的核心是控制关系，控制关系的保障是权责关系。  
+人类是人机关系的终极权利归属和责任归属。  <br> 
+<h3>基于权责关系的人的思考实践模型构建</h3>
+为陈述思考与实践的权责关系，将人视为两套系统，意图系统和行动系统。  
+意图系统具备所有关于指导开展行动的权利和义务，行动系统具备所有开展实际行动的权利和义务。反之，则不具备另一系统的权利和义务。  
+在人的思考与实践中，意图制定与解释行动的目的、方法、策略等，行动系统接受上述方面并开展行动。也就是说，意图系统在于明确具体意图，行动系统在于实现意图的行动路径。  
+行动系统承接意图控制，在客观世界限制下开展行动，且意图的控制受到客观世界的现实与规律的限制，行动开展之后会塑造新的客观现实基础。  
+意图系统具备意图转译的权利和义务，意图系统的转译是意图系统向行动系统明确控制的唯一方式。  
+意图转译的形式需以行动系统能接受的形式。  
+在人的思考与实践中，因为意图、意图转译、行动都发生在人的内部，所以是隐性的。  <br> 
+<h3>基于权责关系的人机关系思考实践模型构建</h3> 
+(人机权责归属）在人机关系中，人类是人机关系的终极权利归属和责任归属。机器作为代实践者，其权利和责任是代持的，其最终的权利和责任源头归于人。  
+机器代持的权责最终归属于其权责代持赋予者。  
+机器的代实践的权责归属于赋予其代实践的控制者。  
+(意图的转译与显化）意图系统具备将意图转译的权利和义务。因为机器行动系统在人的外部，所以意图的转译是显化的，即意图的转译结果必须是人的外部可依据一定规则可识别、可理解、可指导机器行动系统开展行动的。这个过程也可称为意图的显化。  
+(意图系统再划分）根据意图的转译，意图系统和机器行动系统必然可以进一步划分权责模块。  
+意图系统可分为两个模块，第一部分是负责现实理解、意图生发的模块，具备终极的意图产出权责和终极的意图定义权责，可称为第一类意图。第二部分是承接第一类意图的命令，并将将其转译为机器可理解的意图显化的部分，不具备意图生发和终极的意图能力指导权责。  
+(行动系统再划分)同理，行动系统也可再次划分。意图的转译后，包含了多种可能的行动路径。第一类行动负责承接意图的转译，保留所有行动开展的可能，第二类行动负责执行具体的行动。  <br> 
+<h3>意图系统的权责可切分性探讨</h3>
+基于上面的框架，切分后的系统，是否还具备权责可分割性？
+可以设想，第一类意图与第二类意图之间或需转译。如果成立，那么第一类意图之中包含需要承接上层意图，并将其转译给第二类意图的权责模块。也意味着第一类意图可以再次切分。  
+同理，其他已切分的系统也可以再次切分。  
+以此类推，可以设想，系统或许具备无限可切分性，且切分必须一分为二，两者之间需要转译的存在。  
+这个内容尚需探讨。  <br>
+<hr>
+结束语：
+人之为人，是因为人的意图具备无限生发性。其无穷性是意图潜藏的无穷性。其确定性是意图确立的确定性。
+机器之为机器，是因为机器具备行动可能的无穷性。其行动可能的无穷性是依立于人的意图的确定性。
+        </div>
+    </div>
+
+    <div class="footer">
+        本作品“人·AI·秩序”由祝青创作，以 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">知识共享 署名-相同方式共享 4.0 国际许可协议 (CC BY-SA 4.0) </a> 授权。
+    </div>
+
+</div>
+
+<script>
+    // 标签切换逻辑
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(btn => {
+        btn.addEventListener('click', function () {
+            tabs.forEach(b => b.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+
+            this.classList.add('active');
+            const target = document.getElementById(this.dataset.tab);
+            if (target) target.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
